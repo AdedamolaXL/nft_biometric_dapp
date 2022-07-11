@@ -1,0 +1,46 @@
+{
+    "name": "express_openid",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+        "cookie-parser": "^1.4.6",
+        "express": "^4.18.1",
+        "jade": "^1.11.0",
+        "openid-client": "^5.1.8"
+    },
+    "devDependencies": {
+        "eslint": "^8.17.0",
+        "eslint-config-airbnb-base": "15.0.0",
+        "eslint-plugin-import": "2.26.0"
+    },
+    "eslintConfig": {
+        "extends": "airbnb-base",
+        "env": {
+            "es6": true,
+            "browser": true
+        },
+        "rules": {
+            "brace-style": [
+                "error",
+                "stroustrup"
+            ],
+            "comma-dangle": [
+                "error",
+                "never"
+            ],
+            "no-unused-vars": [
+                "warn"
+            ],
+            "no-var": [
+                "off"
+            ],
+            "one-var": [
+                "off"
+            ],
+            "no-console": [
+                "off"
+            ]
+        }
+    }
+}
