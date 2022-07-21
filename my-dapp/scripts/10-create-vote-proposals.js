@@ -1,5 +1,5 @@
 import sdk from './1-initialize-sdk.js';
-import {ethers} from 'ethers';
+import { ethers } from 'ethers';
 
 // This is our governance contract.
 const vote = sdk.getVote('0x14555839653E983a416feFdfa4375db70Ab7626e');
@@ -46,7 +46,7 @@ const token = sdk.getToken('0x67aAbF5A758314DBCBc17540913CcCbfBa24440a');
   try {
     // Create proposal to transfer ourselves 6,900 tokes for being awesome
     const amount = 6_900;
-    const description = 'Should the DAO transfer " + amount + " tokens from the treasury to ' +
+    const description = 'Should the DAO transfer ' + amount + ' tokens from the treasury to ' +
     process.env.WALLET_ADDRESS + ' for being awesome?';
 
     const executions = [
@@ -72,4 +72,4 @@ const token = sdk.getToken('0x67aAbF5A758314DBCBc17540913CcCbfBa24440a');
   } catch (error) {
     console.error('failed to create second proposal', error);
   }
-})
+})();
